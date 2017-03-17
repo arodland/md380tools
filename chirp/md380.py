@@ -310,7 +310,7 @@ def asctoutf(ascstring, size=None):
     toret = ""
     for c in ascstring:
         toret = toret + c + "\x00"
-    if size is not None:
+    if size is None:
         return toret
 
     # Correct the size here.
